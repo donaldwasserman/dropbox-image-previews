@@ -1,0 +1,52 @@
+{
+  "name": "dropbox-image-previews",
+  "version": "1.0.0",
+  "description": "A probot app to convert a sharable dropbox link into an image",
+  "author": "Donald Wasserman <djwasserman@gmail.com>",
+  "license": "MIT",
+  "repository": "https://github.com/db-imager.git",
+  "homepage": "https://github.com//db-imager",
+  "bugs": "https://github.com//db-imager/issues",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "start": "probot run ./index.js",
+    "lint": "standard --fix",
+    "test": "jest && standard",
+    "test:watch": "jest --watch --notify --notifyMode=change --coverage",
+    "test-event": "node_modules/.bin/probot receive -e issues -p test/fixtures/issues.opened.json ./index.js"
+  },
+  "dependencies": {
+    "probot": "^7.2.0",
+    "probot-attachments": "github:probot/attachments"
+  },
+  "devDependencies": {
+    "jest": "^22.4.3",
+    "nock": "^10.0.0",
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2",
+    "standard": "^10.0.3"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "nodemonConfig": {
+    "exec": "npm start",
+    "watch": [
+      ".env",
+      "."
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
