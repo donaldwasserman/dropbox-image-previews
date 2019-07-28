@@ -8,7 +8,7 @@ module.exports = app => {
       case 'issues':
          type = 'issue';
           break;
-      case 'issue_comment': 
+      case 'issue_comment':
         type = 'comment';
         break;
     }
@@ -50,5 +50,5 @@ const replacer = function(text) {
 
 const formatImage = function(dropboxUrl) {
   let base = dropboxUrl.split('?')[0];
-  return `![](${base}?raw=1)`;
+  return `\n ![](${base}?raw=1) \n`;
 }
