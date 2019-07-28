@@ -6,7 +6,7 @@ I created this simple [Probot](https://github.com/probot/probot) to automate tha
 into your github issue, comment, or pull request, and Probot will automatically reformat it into a linked image.
 
 **Note:** It may take a refresh to see the image changed, as Github renders the pages entirely server-side, and there's
-some Probot-related queuing.
+some Probot-related queuing, tldr: YMMV.
 
 > A GitHub App built with [Probot](https://github.com/probot/probot) that A probot app to convert a sharable dropbox link into an image
 
