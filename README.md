@@ -18,10 +18,10 @@ Install and authorize this [Github app here.](https://github.com/apps/dropbox-im
 
 ```sh
 # Install dependencies
-npm install
+yarn install
 
 # Run the bot
-npm start
+yarn start
 ```
 
 ## Contributing
