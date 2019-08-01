@@ -1,7 +1,7 @@
 {
   "name": "dropbox-image-previews",
   "version": "1.0.0",
-  "description": "A probot app to convert a sharable dropbox link into an image",
+  "description": "A probot app to auto convert a sharable dropbox links into an image",
   "author": "Donald Wasserman <djwasserman@gmail.com>",
   "license": "MIT",
   "repository": "https://github.com/db-imager.git",
