@@ -50,5 +50,5 @@ const replacer = function(text) {
 
 const formatImage = function(dropboxUrl) {
   let base = dropboxUrl.split('?')[0];
-  return `\n ![](${base}?raw=1) \n`;
+  return `\n\n ![](${base}?raw=1) \n\n`;
 }
