@@ -5,6 +5,8 @@ It's great to connect your dropbox account to your screenshot utility. What's le
 I created this simple [Probot](https://github.com/probot/probot) to automate that process, allowing you to paste a link
 into your github issue, comment, or pull request, and Probot will automatically reformat it into a linked image.
 
+Note, there may be some formatting issues depending on how the page gets edited and rendered, due to github's page rendering
+
 **Note:** It may take a refresh to see the image changed, as Github renders the pages entirely server-side, and there's
 some Probot-related queuing, tldr: YMMV.
 
