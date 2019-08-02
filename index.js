@@ -35,6 +35,7 @@ const replacer = function(text) {
   let output = text,
       more,
       counter = 0;
+
   while ((more = regex.exec(text)) !== null) {
     counter++;
     let currentMatch = more[0];
