@@ -32,9 +32,9 @@ module.exports = app => {
 
 const replacer = function(text) {
   let regex = new RegExp(/https?:\/\/(www\.)dropbox\.com\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)\?dl=0/gi);
-  let output = text;
-  let more;
-  let counter = 0;
+  let output = text,
+      more,
+      counter = 0;
   while ((more = regex.exec(text)) !== null) {
     counter++;
     let currentMatch = more[0];
